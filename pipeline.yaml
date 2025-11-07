@@ -21,7 +21,7 @@ resources:
       trigger: none
   pipelines:
     - pipeline: azul-bedrock
-      source: ag-release-dev\ag-azul-bedrock-release-dev
+      source: ag-github-dev\ag-azul-bedrock-release-dev
       project: Azul
       trigger: true
 
