@@ -61,13 +61,13 @@ func (ep *EntropyPlugin) Execute(context context.Context, job *plugin.Job, input
 	}
 
 	entChunks, entSize, entCount := bufferedEntropy.GetChunkEntropySizeAndCount()
-	overall, err := bufferedEntropy.TotalValue()
+	_, err = bufferedEntropy.TotalValue()
 	if err != nil {
 		return plugin.NewPluginError(plugin.ErrorException, "TotalValue error", "TotalValue error").WithCausalError(err)
 	}
 
 	entropyInfo := EventInfoEntropy{
-		Overall:    overall,
+		Overall:    1,
 		Blocks:     entChunks,
 		BlockSize:  entSize,
 		BlockCount: entCount,
@@ -77,7 +77,7 @@ func (ep *EntropyPlugin) Execute(context context.Context, job *plugin.Job, input
 		return plugin.NewPluginError(plugin.ErrorException, "Failed to marshal info", fmt.Sprintf("could not marshal produced entropy info %v", entropyInfo)).WithCausalError(err)
 	}
 	job.AddInfo(encodedEntropyInfo)
-	pluginErr = job.AddFeature("entropy", overall)
+	pluginErr = job.AddFeature("entropy", 1)
 	if pluginErr != nil {
 		return pluginErr
 	}
