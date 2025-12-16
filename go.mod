@@ -4,7 +4,7 @@ go 1.25.0
 
 toolchain go1.25.1
 
-require github.com/AustralianCyberSecurityCentre/azul-bedrock/v9 v9.0.2
+require github.com/AustralianCyberSecurityCentre/azul-bedrock/v9 v9.0.28
 
 require (
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.19.0 // indirect
@@ -32,9 +32,9 @@ require (
 	github.com/sanity-io/litter v1.5.8 // indirect
 	github.com/stretchr/objx v0.5.2 // indirect
 	github.com/stretchr/testify v1.11.1 // indirect
-	golang.org/x/net v0.44.0 // indirect
-	golang.org/x/sys v0.36.0 // indirect
-	golang.org/x/text v0.29.0 // indirect
+	golang.org/x/net v0.47.0 // indirect
+	golang.org/x/sys v0.38.0 // indirect
+	golang.org/x/text v0.31.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
