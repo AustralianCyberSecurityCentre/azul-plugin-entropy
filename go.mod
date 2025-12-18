@@ -4,7 +4,7 @@ go 1.25.0
 
 toolchain go1.25.1
 
-require github.com/AustralianCyberSecurityCentre/azul-bedrock/v9 v9.0.28
+require github.com/AustralianCyberSecurityCentre/azul-bedrock/v10 v10.0.2
 
 require (
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.19.0 // indirect
@@ -38,4 +38,4 @@ require (
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
 
-// replace github.com/AustralianCyberSecurityCentre/azul-bedrock/v9 v9.0.15 => ../../azul-core/azul-bedrock
+// replace github.com/AustralianCyberSecurityCentre/azul-bedrock/v10 v9.0.15 => ../../azul-core/azul-bedrock
