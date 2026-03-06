@@ -1,8 +1,8 @@
 module github.com/AustralianCyberSecurityCentre/azul-entropy.git
 
-go 1.25.0
+go 1.26.0
 
-toolchain go1.25.1
+toolchain go1.26.1
 
 require github.com/AustralianCyberSecurityCentre/azul-bedrock/v10 v10.0.42
 
