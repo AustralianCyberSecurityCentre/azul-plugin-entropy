@@ -9,7 +9,6 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV GOOS=linux GOARCH=amd64 CGO_ENABLED=0 GO111MODULE=on GOPATH=/src/tmp/go
 
 ARG XDG_CONFIG_HOME
-ENV GOPRIVATE=github.com/AustralianCyberSecurityCentre/*
 
 RUN apt-get update && \
     apt-get upgrade -y
@@ -19,8 +18,7 @@ RUN git config --global url."git@github.com:AustralianCyberSecurityCentre/".inst
 COPY . /src
 
 # full static builds with no ld deps, so we can copy it to scratch
-RUN --mount=type=ssh,id=id cd /src && \
-    go build -v -a -tags netgo -ldflags '-w -extldflags "-static"' -o /go/bin/azul-entropy *.go
+RUN go build -v -a -tags netgo -ldflags '-w -extldflags "-static"' -o /go/bin/azul-entropy *.go
 
 # now copy artifacts to a lightweight image
 FROM $REGISTRY/alpine:latest@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659
