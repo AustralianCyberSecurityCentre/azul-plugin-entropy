@@ -2,9 +2,9 @@ module github.com/AustralianCyberSecurityCentre/azul-entropy.git
 
 go 1.26.0
 
-toolchain go1.26.1
+toolchain go1.26.2
 
-require github.com/AustralianCyberSecurityCentre/azul-bedrock/v11 v11.0.23
+require github.com/AustralianCyberSecurityCentre/azul-bedrock/v11 v11.0.30
 
 require (
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.21.0 // indirect
