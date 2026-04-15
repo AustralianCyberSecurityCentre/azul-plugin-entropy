@@ -21,6 +21,6 @@ COPY . /src
 RUN cd /src && go build -v -a -tags netgo -ldflags '-w -extldflags "-static"' -o /go/bin/azul-entropy *.go
 
 # now copy artifacts to a lightweight image
-FROM $REGISTRY/alpine:latest@sha256:25109184c71bdad752c8312a8623239686a9a2071e8825f20acb8f2198c3f659
+FROM $REGISTRY/alpine:latest@sha256:c69a6ff7c24d1ffa913798501d0e7104e0e9764e28eb44a930939f91ef829e64
 COPY --from=builder /go/bin /bin
 ENTRYPOINT ["/bin/azul-entropy"]
