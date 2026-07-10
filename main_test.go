@@ -3,7 +3,7 @@ package main
 import (
 	"testing"
 
-	"github.com/AustralianCyberSecurityCentre/azul-bedrock/v11/gosrc/plugin"
+	"github.com/AustralianCyberSecurityCentre/azul-bedrock/v12/gosrc/plugin"
 )
 
 func TestGeneratedBinary(t *testing.T) {
