@@ -4,10 +4,10 @@ go 1.26.0
 
 toolchain go1.26.2
 
-require github.com/AustralianCyberSecurityCentre/azul-bedrock/v13 v13.0.8
+require github.com/AustralianCyberSecurityCentre/azul-bedrock/v13 v13.0.15
 
 require (
-	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.23.0 // indirect
+	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.23.1 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/internal v1.12.0 // indirect
 	github.com/Azure/azure-sdk-for-go/sdk/storage/azblob v1.8.0 // indirect
 	github.com/fatih/structs v1.1.0 // indirect
