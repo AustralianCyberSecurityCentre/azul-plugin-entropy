@@ -4,7 +4,7 @@ go 1.27.0
 
 toolchain go1.27.1
 
-require github.com/AustralianCyberSecurityCentre/azul-bedrock/v13 v13.0.50
+require github.com/AustralianCyberSecurityCentre/azul-bedrock/v13 v13.0.52
 
 require (
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.23.1 // indirect
@@ -13,7 +13,7 @@ require (
 	github.com/apache/arrow-go/v18 v18.7.0 // indirect
 	github.com/fatih/structs v1.1.0 // indirect
 	github.com/go-viper/mapstructure/v2 v2.5.0 // indirect
-	github.com/goccy/go-json v0.10.6 // indirect
+	github.com/goccy/go-json v0.11.1 // indirect
 	github.com/google/flatbuffers v25.12.19+incompatible // indirect
 	github.com/hamba/avro/v2 v2.31.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
